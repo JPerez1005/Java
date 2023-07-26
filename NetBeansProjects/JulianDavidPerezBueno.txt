@@ -1,0 +1,78 @@
+package repaso;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+
+public class autenticarUsuario {
+    public static String hash(String input) {
+        try{
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hash = digest.digest(input.getBytes("UTF-8"));
+            
+            StringBuilder hexString = new StringBuilder();
+            for(byte b : hash) {
+               String hex = Integer.toHexString(0xff & b);
+               if(hex.length() == 1) {
+                   hexString.append('0');
+               }
+               hexString.append(hex);
+            }
+            return hexString.toString();       
+            
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+    
+    public static void main(String[] args) {
+        int bandera;
+        String usuario, clave, sal, sarta, f1, tempo;
+        bandera = 0;
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Usuario = ");
+        usuario = entrada.nextLine();
+        System.out.println(usuario);
+        
+        System.out.println("Clave: ");
+        clave = entrada.nextLine();
+        
+        try {
+            Scanner escaner = new Scanner(new File("passwd.txt"));
+            escaner.useDelimiter(",");
+            
+            while (escaner.hasNextLine()) {
+                String[] line = escaner.nextLine().split(",");
+                //System.out.println("Columna 1: " + line[0]);
+                //System.out.println("Columna 2: " + line[1]);
+                //System.out.println("Columna 3: " + line[2]);
+                //System.out.println("Columna 4: " + line[3]);
+                //System.out.println(usuario);
+                tempo = line[0];
+                
+                
+                if(usuario.equals(tempo)) {  
+                    sal = line[3];
+                    bandera = 1;
+                    sarta = clave + 1;
+                    f1 = hash(sarta);
+                    if (f1.equals(line[2])) {
+                        System.out.println("Usuario " + usuario + "aceptado");
+                    }
+                    else {
+                        System.out.println("Usuario " + usuario + "rechazado"); 
+                    }
+                }                     
+            }
+            if(bandera == 0){
+                System.out.println("El usuario " + usuario + "No existe");
+            }
+        escaner.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }       
+    }    
+}

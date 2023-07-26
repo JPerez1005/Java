@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
+      <Point value="[0, 0]"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="184" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="104" max="-2" attributes="0"/>
+              <EmptySpace pref="218" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jScrollPane1" min="-2" pref="403" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="33" max="-2" attributes="0"/>
+              <EmptySpace pref="27" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="/*Desarrolle una aplicaci&#xf3;n utilizando colecciones, la cual permita &#xa;        tener las siguientes funcionalidades&#xa;&#xa;    &#x2022; Insertar elementos (al inicio, al final).&#xa;    &#x2022; Eliminar elementos.&#xa;    &#x2022; Obtener el valor de una posici&#xf3;n determinada.&#xa;    &#x2022; Asignar valor a una posici&#xf3;n determinada.&#xa;    &#x2022; Calcular la sumatoria de los valores de todos los elementos.&#xa;    &#x2022; Calcular el promedio de los valores de todos los elementos.&#xa;    &#x2022; Obtener el n&#xfa;mero de elementos.&#xa;    &#x2022; Contar el n&#xfa;mero de valores igual a cero (0).&#xa;    &#x2022; Calcular la suma de los pares.&#xa;    &#x2022; Contar el n&#xfa;mero de repeticiones dado un n&#xfa;mero.&#xa;    &#x2022; Modificar el valor de una posici&#xf3;n por otro valor suministrado.&#xa;    &#x2022; Cambiar todo el contenido.&#xa;    &#x2022; Invertir el arreglo.&#xa;    *Obtener el mayor valor.&#xa;    &#x2022; Obtener el menor valor.&#xa;    &#x2022; Obtener los primeros n elementos del arreglo.&#xa;    &#x2022; Obtener los &#xfa;ltimos n elementos del arreglo.&#xa;    &#x2022; Indicar si es pal&#xed;ndromo.&#xa;    &#x2022; Indicar si un n&#xfa;mero se encuentra dentro del arreglo.&#xa;    &#x2022; Mostrar el contenido del arreglo.&#xa;&#xa;        Para conseguir el objetivo, se le suministra la clase principal&#xa;        y la clase de prueba, tenga en cuenta los nombres de los m&#xe9;todos,&#xa;        argumentos y tipos de datos para la codificaci&#xf3;n.*/"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="ff" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Times New Roman" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Explicacion!!"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
